@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Maker</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="emoji.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f13a295f79.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="heading">
+        <h1>
+            The Emoji Maker
+        </h1>
+    </header>
+
+    <section class="creationArea">
+        <section class="createEmoji">
+            <div id="canvas1" class="canvas1 canvas">
+                <i></i>
+                <div class="selectSkin select">
+                    <p>Select Colour</p>
+                    <div class="skinRow row">
+                        <img src="./assets/skin/yellow.png" alt="" id="yellowSkin" class="selectYellowSkin skinImg choose">
+                        <img src="./assets/skin/green.png" alt="" id="greenSkin" class="selectGreenSkin skinImg choose">
+                        <img src="./assets/skin/red.png" alt="" id="redSkin" class="selectRedSkin skinImg choose">
+                    </div>
+                </div>
+                <i id="displayEyes" class="fa-solid fa-chevron-right choose"></i>
+            </div>
+            <div id="canvas2" class="canvas2 canvas">
+                <i id="displaySkin" class="fa-solid fa-chevron-left choose"></i>
+                <div class="selectEyes select">
+                    <p>Select Eyes</p>
+                    <div class="eyeRow1 row">
+                        <img src="./assets/eyes/normal.png " alt="" id="normalEyes" class="selectNormalEyes eyeImg choose">
+                        <img src="./assets/eyes/closed.png" alt="" id="closedEyes" class="selectCLosedEyes eyeImg choose">
+                        <img src="./assets/eyes/long.png" alt="" id="longEyes" class="selectLongEyes eyeImg choose">
+                    </div>
+                    <div class="eyeRow2 row">
+                        <img src="./assets/eyes/laughing.png" alt="" id="laughingEyes" class="selectLaughingEyes eyeImg choose">
+                        <img src="./assets/eyes/rolling.png" alt="" id="rollingEyes" class="selectRollingEyes eyeImg choose">
+                        <img src="./assets/eyes/winking.png" alt="" id="winkingEyes" class="selectWinkingEyes eyeImg choose">
+                    </div>
+                </div>
+                <i id="displayMouth" class="fa-solid fa-chevron-right choose"></i>
+            </div>
+            <div id="canvas3" class="canvas3 canvas">
+                <i id="displayEyes2" class="fa-solid fa-chevron-left choose"></i>
+                <div class="selectMouth select">
+                    <p>Select Mouth</p>
+                    <div class="mouthRow1 row">
+                        <img src="./assets/mouth/open.png" alt="" id="openMouth" class="selectOpenMouth mouthImg choose">
+                        <img src="./assets/mouth/smiling.png" alt="" id="smilingMouth" class="selectSmilingMouth mouthImg choose">
+                        <img src="./assets/mouth/straight.png" alt="" id="straightMouth" class="selectStraightMouth mouthImg choose">
+                    </div>
+                    <div class="mouthRow2 row">
+                        <img src="./assets/mouth/sad.png" alt="" id="sadMouth" class="selectSadMouth mouthImg choose">
+                        <img src="./assets/mouth/teeth.png" alt="" id="teethMouth" class="selectTeethMouth mouthImg choose">
+                    </div>
+                </div>
+                <i></i>
+            </div>
+        </section>
+
+        <section id="displayEmoji" class="displayEmoji">
+            <div id="emoji" class="emoji"></div>
+        </section>
+    </section>
+
+    <!-- JS -->
+    <script src="emoji.js"></script>
+
+</body>
+
+</html>
