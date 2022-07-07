@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #54c3ef;
+}
+
+.heading {
+    text-align: center;
+    color: #fff748;
+    margin-top: 5em;
+    margin-bottom: 7em;
+    /* border: 1px solid black; */
+}
+
+.creationArea {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 2em; */
+    /* border: 1px solid black; */
+}
+
+.createEmoji {
+    width: 40%;
+    /* border: 1px solid black; */
+}
+
+.canvas {
+    background-color: #fff748;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+}
+
+.canvas2 {
+    display: none;
+}
+
+.canvas3 {
+    display: none;
+}
+
+i {
+    width: 10%;
+    /* border: 1px solid black; */
+}
+
+.fa-chevron-right {
+    text-align: end;
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid black; */
+    width: 80%;
+    /* height: 100%; */
+    padding: 2em 0;
+    margin: auto;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.choose:hover {
+    cursor: pointer;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em 4em;
+    /* border: 1px solid black; */
+}
+
+.skinImg {
+    height: 40px;
+    width: 40px;
+}
+
+.eyeImg,
+.mouthImg {
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+.displayEmoji {
+    /* border: 1px solid black; */
+    width: 40%;
+}
+
+.emoji {
+    background-color: #2b3252;
+    height: 55vh;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.defaultSkin {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 100px;
+    display: none;
+}
+
+.defaultEyes {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -140px;
+    z-index: 1;
+    display: none;
+}
+
+.defaultMouth {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -225px;
+    display: none;
+}
+
+@media only screen and (max-width: 850px) {
+    body {
+        width: 100%;
+    }
+    .heading {
+        width: 100%;
+        border: 1px solid black;
+    }
+    .creationArea {
+        flex-direction: column;
+    }
+    .createEmoji {
+        width: 100%;
+    }
+    .displayEmoji {
+        width: 100%;
+    }
+}
